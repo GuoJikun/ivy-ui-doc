@@ -1,0 +1,20 @@
+{
+  "name": "nsu-ui-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^0.22.4"
+  },
+  "dependencies": {
+    "ivy-ui": "^0.10.1"
+  }
+}
