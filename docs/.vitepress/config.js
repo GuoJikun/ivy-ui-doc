@@ -1,5 +1,4 @@
 import { defineConfig } from "vitepress";
-import {} from "vite-plugin-vue";
 
 export default defineConfig({
   lang: "zh-CN",
@@ -8,6 +7,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     // Type is `DefaultTheme.Config`
+    layout: "page",
     repo: "GuoJikun/nsu-docs",
     docsDir: "docs",
     docsBranch: "main",
@@ -22,6 +22,7 @@ export default defineConfig({
       {
         text: "组件",
         link: "/components/index",
+        activeMatch: "/components/",
       },
       {
         text: "更新日志",
@@ -38,18 +39,22 @@ export default defineConfig({
         {
           text: "快速开始",
           link: "/components/index",
+          items: [],
         },
         {
           text: "Color 色彩",
           link: "/components/color",
+          items: [],
         },
         {
           text: "theme 主题",
           link: "/components/theme",
+          items: [],
         },
         {
           text: "组件",
-          children: [
+          collapsible: true,
+          items: [
             {
               text: "基础/布局",
             },
@@ -197,12 +202,18 @@ export default defineConfig({
         },
       ],
     },
+    footer: {
+      message: "MIT Licensed",
+      copyright: "Copyright © 2022-present GuoJiKun",
+    },
   },
-  vite: {
-    plugins: [
-      vue({
-        template: {},
-      }),
-    ],
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => {
+          return /^ivy-/.test(tag);
+        },
+      },
+    },
   },
 });
