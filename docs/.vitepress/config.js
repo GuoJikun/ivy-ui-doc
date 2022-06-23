@@ -28,29 +28,34 @@ export default defineConfig({
         text: "更新日志",
         link: "/changelog",
       },
-      {
-        text: "Github",
-        link: "https://github.com/GuoJikun/ivy-ui",
-      },
+    ],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/GuoJikun/ivy-ui" },
     ],
 
     sidebar: {
       "/components/": [
         {
-          text: "快速开始",
-          link: "/components/index",
-          items: [],
+          text: "简介",
+          items: [
+            {
+              text: "快速开始",
+              link: "/components/index",
+              items: [],
+            },
+            {
+              text: "Color 色彩",
+              link: "/components/color",
+              items: [],
+            },
+            {
+              text: "theme 主题",
+              link: "/components/theme",
+              items: [],
+            },
+          ],
         },
-        {
-          text: "Color 色彩",
-          link: "/components/color",
-          items: [],
-        },
-        {
-          text: "theme 主题",
-          link: "/components/theme",
-          items: [],
-        },
+
         {
           text: "组件",
           collapsible: true,
