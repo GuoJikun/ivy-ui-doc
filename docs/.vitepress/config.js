@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   lang: "zh-CN",
-  title: "nsu-ui 文档",
+  title: "ivy-ui 文档",
   description: "Just playing around.",
   lastUpdated: true,
   themeConfig: {
