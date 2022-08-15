@@ -2,7 +2,9 @@ import DefaultTheme from "vitepress/theme";
 
 export default {
   ...DefaultTheme,
-  enhanceApp({ app }) {
-    import("ivy-ui");
+  async enhanceApp() {
+    if (!import.meta.env.SSR) {
+      await import("ivy-ui");
+    }
   },
 };

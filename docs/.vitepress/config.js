@@ -221,4 +221,19 @@ export default defineConfig({
       },
     },
   },
+  vite: {
+    define: {
+      HTMLElement: class {},
+    },
+    build: {
+      target: "es2015",
+    },
+    rollupOptions: {
+      output: {
+        globals: {
+          HTMLElement: "HTMLElement",
+        },
+      },
+    },
+  },
 });
