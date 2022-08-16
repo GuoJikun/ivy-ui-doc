@@ -1,0 +1,11 @@
+import{_ as s,o as a,c as n,a as o}from"./app.0a811f3e.js";const _=JSON.parse('{"title":"\u4E3B\u9898\u8BBE\u7F6E","description":"","frontmatter":{},"headers":[],"relativePath":"components/theme.md","lastUpdated":1660641690000}'),l={name:"components/theme.md"},p=o(`<h1 id="\u4E3B\u9898\u8BBE\u7F6E" tabindex="-1">\u4E3B\u9898\u8BBE\u7F6E <a class="header-anchor" href="#\u4E3B\u9898\u8BBE\u7F6E" aria-hidden="true">#</a></h1><div class="language-css"><button class="copy"></button><span class="lang">css</span><pre><code><span class="line"><span style="color:#676E95;font-style:italic;">/*\u9ED8\u8BA4\u53D8\u91CF\u540D*/</span></span>
+<span class="line"><span style="color:#A6ACCD;">--color-primary: </span><span style="color:#89DDFF;">#</span><span style="color:#A6ACCD;">409eff;</span></span>
+<span class="line"><span style="color:#A6ACCD;">--color-success: </span><span style="color:#89DDFF;">#</span><span style="color:#A6ACCD;">67c23a;</span></span>
+<span class="line"><span style="color:#A6ACCD;">--color-warn: </span><span style="color:#89DDFF;">#</span><span style="color:#A6ACCD;">e6a23c;</span></span>
+<span class="line"><span style="color:#A6ACCD;">--color-error: </span><span style="color:#89DDFF;">#</span><span style="color:#A6ACCD;">f56c6c;</span></span>
+<span class="line"><span style="color:#A6ACCD;">--color-info: </span><span style="color:#89DDFF;">#</span><span style="color:#A6ACCD;">909399;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">/*\u5706\u89D2*/</span></span>
+<span class="line"><span style="color:#A6ACCD;">--border-radius: 4px;</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">/*\u9634\u5F71*/</span></span>
+<span class="line"><span style="color:#A6ACCD;">--box-shadow: &quot;0 1px 6px rgba(0</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">0</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;">0</span><span style="color:#89DDFF;">,</span><span style="color:#A6ACCD;"> 0</span><span style="color:#89DDFF;">.</span><span style="color:#FFCB6B;">2</span><span style="color:#A6ACCD;">)&quot;;</span></span>
+<span class="line"></span></code></pre></div>`,2),e=[p];function c(t,r,i,D,A,C){return a(),n("div",null,e)}var d=s(l,[["render",c]]);export{_ as __pageData,d as default};
