@@ -8,12 +8,13 @@ export default defineConfig({
   themeConfig: {
     // Type is `DefaultTheme.Config`
     layout: "page",
-    repo: "GuoJikun/nsu-docs",
+    repo: "GuoJikun/ivy-ui-docs",
     docsDir: "docs",
     docsBranch: "main",
     editLinks: true,
     editLinkText: "Edit this page on GitHub",
     lastUpdated: "Last Updated",
+    outDir: "../dist",
     nav: [
       {
         text: "首页",
@@ -211,6 +212,10 @@ export default defineConfig({
       message: "MIT Licensed",
       copyright: "Copyright © 2022-present GuoJiKun",
     },
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
   },
   vue: {
     template: {
@@ -222,18 +227,8 @@ export default defineConfig({
     },
   },
   vite: {
-    define: {
-      HTMLElement: class {},
-    },
     build: {
       target: "es2015",
-    },
-    rollupOptions: {
-      output: {
-        globals: {
-          HTMLElement: "HTMLElement",
-        },
-      },
     },
   },
 });
